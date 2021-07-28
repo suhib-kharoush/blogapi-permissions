@@ -7,4 +7,4 @@ class IsAuthorOrReadOnly(permissions.BasePermission):
             return True
         # If the logged in user same as the author
         # Write persmission
-        return request.user == obj.author
+        return request.user == obj.technician
